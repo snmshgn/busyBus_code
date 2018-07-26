@@ -1,0 +1,113 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/* general */
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #1c1414;
+  color: #333e47;
+  font-family: 'Open Sans';
+  font-size: .87em;
+  letter-spacing: 1px;
+}
+
+/* topmost navigation */
+
+header {
+  background-image: url(../images/statusbar.jpg);
+  background-size: cover;
+  height: 3%;
+}
+
+nav {
+  background-color:#fff;
+  height: 6%;
+  z-index: inherit;
+}
+
+li {
+  padding-bottom: 3%;
+  margin-bottom: 5%;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 600;
+  padding-bottom: 6%;
+  width: 70%;
+}
+
+div.flagicon {
+  background-image: url(../images/flagicon.png);
+  background-size: contain;
+  width: 30%;
+}
+
+h1, .flagicon {
+  display: flex;
+  justify-content: space-between;
+}
+
+.svg-icon {
+  padding: 2% 0 0 2%;
+  height: 2em;
+  width: 2em;
+}
+
+/* content */
+
+.container {
+  position: absolute;
+  radius: 10px;
+  background-color: #fff;
+  height: 677px;
+  width: 375px;
+  z-index:-2;
+}
+
+.content {
+  background-color: #fff;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25)
+  position: absolute;
+  margin: 0 auto;
+  padding: 6%;
+  padding-top: 1%;
+  width: 88%;
+}
+
+.map {
+  position: relative;
+  background-image: url(../images/map.png);
+  background-size: contain;
+  top: -45px;
+  height: 52%;
+  width: 100%;
+  z-index: -1;
+}
+
+.line, .times {
+  display: flex;
+  justify-content: space-between;
+}
+
+.times {
+  font-weight: 600;
+}
+
+.delays {
+  font-size: .9em;
+  font-weight: 100;
+  letter-spacing: 1.5px;
+  margin-left: 5%;
+  padding-top: 1%;
+}
+
+.lines {
+  border-bottom: .5px solid #556674;
+}
