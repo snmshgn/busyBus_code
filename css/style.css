@@ -26,7 +26,7 @@ header {
 
 nav {
   background-color:#fff;
-  height: 6%;
+  height: 17%;
   z-index: inherit;
 }
 
@@ -36,21 +36,34 @@ li {
 }
 
 h1 {
+  display: inline;
   font-size: 2em;
   font-weight: 600;
+  margin: 0;
   padding-bottom: 6%;
   width: 70%;
 }
 
 div.flagicon {
+  display: inline;
   background-image: url(../images/flagicon.png);
+  background-repeat: no-repeat;
   background-size: contain;
-  width: 30%;
+  position: relative;
+  top: -24px;
+  left: 320px;
+  width: 20px;
+  height: 20px;
 }
 
 h1, .flagicon {
   display: flex;
   justify-content: space-between;
+  padding: 5%;
+}
+
+header, nav, .content {
+  opacity: .9;
 }
 
 .svg-icon {
@@ -67,17 +80,19 @@ h1, .flagicon {
   background-color: #fff;
   height: 677px;
   width: 375px;
-  z-index:-2;
+  z-index: -2;
 }
 
 .content {
   background-color: #fff;
   border-radius: 0 0 10px 10px;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25)
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
+  height: 250px;
   position: absolute;
   margin: 0 auto;
   padding: 6%;
   padding-top: 1%;
+  overflow: scroll;
   width: 88%;
 }
 
@@ -85,8 +100,8 @@ h1, .flagicon {
   position: relative;
   background-image: url(../images/map.png);
   background-size: contain;
-  top: -45px;
-  height: 52%;
+  top: -139px;
+  height: 100%;
   width: 100%;
   z-index: -1;
 }
