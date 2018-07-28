@@ -25,8 +25,9 @@ header {
 }
 
 nav {
+  display: inline-block;
   background-color:#fff;
-  height: 17%;
+  height: 4%;
   z-index: inherit;
 }
 
@@ -36,38 +37,42 @@ li {
 }
 
 h1 {
-  display: inline;
+  display: inline-block;
   font-size: 2em;
   font-weight: 600;
   margin: 0;
   padding-bottom: 6%;
-  width: 70%;
+  width: 20%;
 }
 
-div.flagicon {
-  display: inline;
-  background-image: url(../images/flagicon.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: relative;
-  top: -24px;
-  left: 320px;
-  width: 20px;
-  height: 20px;
-}
-
-h1, .flagicon {
+nav {
+  border-radius: 0 0 10px 10px;
   display: flex;
   justify-content: space-between;
   padding: 5%;
 }
 
-header, nav, .content {
+h1 {
+  position: relative;
+  left: -120px;
+  bottom: 3px;
+}
+
+.content {
   opacity: .9;
 }
 
 .svg-icon {
+  position: relative;
   padding: 2% 0 0 2%;
+  height: 2em;
+  width: 2em;
+  right: 19px;
+  bottom: 10px;
+}
+
+.svg-icon2{
+  color: #556674;
   height: 2em;
   width: 2em;
 }
@@ -85,13 +90,13 @@ header, nav, .content {
 
 .content {
   background-color: #fff;
-  border-radius: 0 0 10px 10px;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
-  height: 250px;
+  border-radius: 10px 10px 0 0;
+  height: 300px;
   position: absolute;
-  margin: 0 auto;
+  margin: 72% 0;
+  margin-bottom: 0;
   padding: 6%;
-  padding-top: 1%;
+  padding-bottom: 0;
   overflow: scroll;
   width: 88%;
 }
@@ -125,4 +130,13 @@ header, nav, .content {
 
 .lines {
   border-bottom: .5px solid #556674;
+}
+
+.direction {
+  position: relative;
+  left: 20px;
+  font-size: 1.2em;
+  font-weight: 600;
+  font-style: italic;
+  padding-top: 2%;
 }
