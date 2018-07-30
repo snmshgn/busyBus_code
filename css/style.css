@@ -19,9 +19,7 @@ body {
 /* topmost navigation */
 
 header {
-  background-image: url(../images/statusbar.jpg);
-  background-size: cover;
-  height: 3%;
+  background-color: #fff;
 }
 
 nav {
@@ -54,7 +52,7 @@ nav {
 
 h1 {
   position: relative;
-  left: -120px;
+  left: -115px;
   bottom: 3px;
 }
 
@@ -67,11 +65,14 @@ h1 {
   padding: 2% 0 0 2%;
   height: 2em;
   width: 2em;
-  right: 19px;
+  right: 4%;
   bottom: 10px;
 }
 
 .svg-icon2{
+  position: relative;
+  right: 4px;
+  bottom: 1px;
   color: #556674;
   height: 2em;
   width: 2em;
@@ -133,10 +134,8 @@ h1 {
 }
 
 .direction {
-  position: relative;
-  left: 20px;
   font-size: 1.2em;
   font-weight: 600;
   font-style: italic;
-  padding-top: 2%;
+  padding-top: 5%;
 }
